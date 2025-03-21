@@ -1,0 +1,93 @@
+header.nav-fixed {
+    padding: 0px;
+opacity: 2;
+    height: 80px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  }
+  /* .back_to_top {
+    opacity: 0;
+} */
+.back_to_top i {
+    color: white;
+    font-size: 16px;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    position: fixed;
+    background: #d4b68a;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    border-radius: 35px;
+    border:none;
+}
+.logo-div img {
+width: 10rem ;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a1f1d; /* Dark brown background from the image */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  height: 40px; /* Approximate height based on the image */
+}.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left span, .header-right a {
+  margin: 0 15px;
+  position: relative;
+}
+
+/* Vertical separators */
+.header-left span:not(:last-child)::after,
+.header-right a:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 1px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+/* Social media icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Navigation links */
+.header-right .nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.header-right .nav-link:hover {
+  color: #ddd; /* Slight hover effect */
+}
+#site-header { 
+  background-color: rgba(128, 128, 128, 0.4);
+
+
+  margin-top : 45px;
+  transition: all 0.4s ease 0s;
+  z-index: 100;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
