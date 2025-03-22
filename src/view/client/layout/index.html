@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- font icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- TailwindCSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
 
     <!-- Animate.CSS -->
     <link
@@ -19,7 +21,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-
+    <link rel="stylesheet" href="../../assets/css/header.css">
     <style type="text/tailwindcss">
       @theme {
       }
@@ -28,6 +30,54 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="header-top py-4 flex justify-center">
+      <div class="header-left">
+        <span class="contact">Call us +615 4640 3304</span>
+        <span class="email">barista@qode.com</span>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="flex justify-center m-4">
+          <button class="mx-2" type="submit">
+            Đăng nhập
+          </button>
+          |
+          <button class="mx-2" type="submit">
+            Đăng ký
+          </button>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-gray-500 bg-opacity-40 border-b border-gray-300 shadow-md z-50">
+      <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+        <!-- Logo -->
+        <div>
+          <img src="https://coffee-shop-website-ht-cs-js-ta.netlify.app/Images/Coffee-logo.png" class="w-40" alt="Logo" />
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-6 uppercase text-white font-medium">
+          <li><a href="#" class="hover:text-gray-300">Trang chủ</a></li>
+          <li><a href="#" class="hover:text-gray-300">Giới thiệu</a></li>
+          <li><a href="#" class="hover:text-gray-300">Sản phẩm</a></li>
+          <li><a href="#" class="hover:text-gray-300">Dịch vụ</a></li>
+          <li><a href="#" class="hover:text-gray-300">Tin tức</a></li>
+          <li><a href="#" class="hover:text-gray-300">Liên hệ</a></li>
+        </ul>
+
+        <!-- Buttons -->
+     
+      </nav>
+    </header>
     <!-- WowJS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
@@ -41,5 +91,9 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="../../assets/js/carousel.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
+
   </body>
 </html>
