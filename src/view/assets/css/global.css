@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box !important;
+}
+
+.spacing {
+  margin: 80px 0;
+}
