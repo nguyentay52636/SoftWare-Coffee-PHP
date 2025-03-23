@@ -1,7 +1,11 @@
-* {
-  box-sizing: border-box !important;
-}
+
 
 .spacing {
   margin: 80px 0;
+}
+.feature-item h3 { 
+  color: #d4b68a;
+}
+.feature-item p{
+  color: #d4b68a;
 }

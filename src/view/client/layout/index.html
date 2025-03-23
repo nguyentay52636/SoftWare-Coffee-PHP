@@ -21,7 +21,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" href="../../assets/css/header.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/header.css"> -->
     <style type="text/tailwindcss">
       @theme {
       }
@@ -30,7 +30,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header-top py-4 flex justify-center">
+    <div class="header-top py-4 flex justify-center ">
       <div class="header-left">
         <span class="contact">Call us +615 4640 3304</span>
         <span class="email">barista@qode.com</span>
@@ -56,26 +56,46 @@
 
   
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-gray-500 bg-opacity-40 border-b border-gray-300 shadow-md z-50">
-      <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-        <!-- Logo -->
-        <div>
-          <img src="https://coffee-shop-website-ht-cs-js-ta.netlify.app/Images/Coffee-logo.png" class="w-40" alt="Logo" />
+  
+     <!-- Header -->
+     <header id="site-header" class="fixed top-0 w-full bg-gray-600 bg-opacity-40 border-b border-gray-300 border-opacity-20 z-50 transition-all duration-400">
+      <nav class="navbar navbar-expand-lg bg-transparent py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+          <!-- Logo -->
+          <div class="logo-div">
+            <img src="https://coffee-shop-website-ht-cs-js-ta.netlify.app/Images/Coffee-logo.png" class="w-40" alt="Logo" />
+          </div>
+          <!-- Navbar Toggle -->
+          <button
+            class="navbar-toggler block md:hidden"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navigation Links -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="#" class="text-white uppercase hover:text-gray-300">Trang chủ</a>
+            <a href="#" class="text-white uppercase hover:text-gray-300">Giới thiệu</a>
+            <a href="#" class="text-white uppercase hover:text-gray-300">Sản phẩm</a>
+            <a href="#" class="text-white uppercase hover:text-gray-300">Dịch vụ</a>
+            <a href="#" class="text-white uppercase hover:text-gray-300">Tin tức</a>
+            <a href="#" class="text-white uppercase hover:text-gray-300">Liên hệ</a>
+          </div>
+          <!-- Icons -->
+          <div class="flex items-center space-x-4">
+            <button class="btn border border-green-500 text-green-500 px-3 py-1 rounded hover:bg-green-500 hover:text-white">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn border border-green-500 text-green-500 px-3 py-1 rounded hover:bg-green-500 hover:text-white">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
         </div>
-
-        <!-- Navigation Links -->
-        <ul class="hidden md:flex space-x-6 uppercase text-white font-medium">
-          <li><a href="#" class="hover:text-gray-300">Trang chủ</a></li>
-          <li><a href="#" class="hover:text-gray-300">Giới thiệu</a></li>
-          <li><a href="#" class="hover:text-gray-300">Sản phẩm</a></li>
-          <li><a href="#" class="hover:text-gray-300">Dịch vụ</a></li>
-          <li><a href="#" class="hover:text-gray-300">Tin tức</a></li>
-          <li><a href="#" class="hover:text-gray-300">Liên hệ</a></li>
-        </ul>
-
-        <!-- Buttons -->
-     
       </nav>
     </header>
     <!-- WowJS -->
