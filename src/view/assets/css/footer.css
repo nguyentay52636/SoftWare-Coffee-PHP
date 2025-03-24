@@ -2,8 +2,8 @@
     background-image: url(../images/footer-banner.webp);
     margin-top: var(--common-margin-top);
     background-size: cover;
-    margin-top: 10rem;
-padding-top: 20rem;
+
+padding-top: 10rem;
     
 }
 body {
@@ -20,7 +20,7 @@ body {
 .footer .container {
     display: flex;
         flex-wrap: wrap;
-        padding: 5rem 0 10rem;
+        padding: 5rem 0 5rem;
         justify-content: space-between;
 }
 
@@ -79,10 +79,14 @@ body {
     color: var(--pure-white);
 }
 
-.footer__social-links {
+/* .footer__social-links {
     display: flex;
     justify-content: space-between;
-}
+} */
+ .footer__social-links .me-3 i {
+    text-align: center;
+    font-size: 30px;
+ }
 
 .footer__social-links a {
     color: var(--pure-white);
@@ -93,4 +97,7 @@ body {
 
 input:focus {
     outline: 0;
+}
+.form-control { 
+font-size: 22px;
 }
