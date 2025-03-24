@@ -3,9 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- font icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+      integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- TailwindCSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
 
     <!-- Animate.CSS -->
     <link
@@ -19,45 +38,396 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-
-    <style type="text/tailwindcss">
-      @theme {
-      }
-    </style>
+    <link rel="stylesheet" href="../../assets/css/header.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <!-- Carousel -->
-    <div class="carousel w-full">
-      <div class="w-full h-dvh relative">
-        <img
-          class="z-[1] size-full"
-          src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home1-parallax-1.jpg"
-          class="w-full h-[550px] object-cover"
-          alt="Coffee Shop"
-        />
-        <!-- <div class="carousel-caption">
-          <div class="text-center">
-            <img
-              src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/coffee-shop-logo.png"
-              alt="Coffee Shop Logo"
-              class="mb-4"
-            />
-            <h5>The Home of Coffee</h5>
-            <p>
-              Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-              nominati vim et.
-            </p>
-            <button class="btn">Read More</button>
-          </div>
-        </div> -->
+    <div class="flex justify-center py-4 header-top">
+      <div class="header-left">
+        <span class="contact">Call us +615 4640 3304</span>
+        <span class="email">barista@qode.com</span>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="flex justify-center m-4">
+          <button class="mx-2" type="submit">Đăng nhập</button>
+          |
+          <button class="mx-2" type="submit">Đăng ký</button>
+        </div>
+      </div>
+    </div>
 
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 z-50 w-full bg-gray-500 border-b border-gray-300 shadow-md bg-opacity-40"
+    >
+      <nav
+        class="container flex items-center justify-between px-6 py-4 mx-auto"
+      >
+        <!-- Logo -->
+        <div>
+          <img
+            src="https://coffee-shop-website-ht-cs-js-ta.netlify.app/Images/Coffee-logo.png"
+            class="w-40"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="hidden space-x-6 font-medium text-white uppercase md:flex">
+          <li><a href="#" class="hover:text-gray-300">Trang chủ</a></li>
+          <li><a href="#" class="hover:text-gray-300">Giới thiệu</a></li>
+          <li><a href="#" class="hover:text-gray-300">Sản phẩm</a></li>
+          <li><a href="#" class="hover:text-gray-300">Dịch vụ</a></li>
+          <li><a href="#" class="hover:text-gray-300">Tin tức</a></li>
+          <li><a href="#" class="hover:text-gray-300">Liên hệ</a></li>
+        </ul>
+
+        <!-- Buttons -->
+      </nav>
+    </header>
+
+    <!-- Spacing -->
+    <div class="space-y-24">
+      <!-- Carousel -->
+      <div class="overflow-y-hidden w-full md:h-[600px]">
+        <div class="carousel overflow-y-hidden w-full h-[600px] lg:h-dvh">
+          <!-- Carousel Items -->
+          <div class="w-full h-[600px] bg-red-500 relative">
+            <img
+              class="z-[1] w-full h-[600px] object-cover"
+              src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home1-parallax-1.jpg"
+              alt="Coffee Shop"
+            />
+            <div
+              class="flex justify-center items-center z-10 top-0 left-0 w-full h-[600px] absolute gap-y-4 text-white text-center flex-col bg-opacity-40"
+            >
+              <h1 class="text-[64px] font-bold">The Home of Coffee</h1>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
+                nominati vim et.
+              </p>
+              <button
+                class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[250px] h-[50px]"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full h-[600px] relative">
+            <img
+              class="z-[1] w-full h-[600px] object-cover"
+              src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-parallax-2.jpg"
+              alt="Coffee Shop"
+            />
+            <div
+              class="flex justify-center items-center z-10 top-0 left-0 w-full h-[600px] absolute gap-y-4 text-white text-center flex-col bg-opacity-40"
+            >
+              <h1 class="text-[64px] font-bold">The Home of Coffee</h1>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
+                nominati vim et.
+              </p>
+              <button
+                class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[250px] h-[50px]"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full h-screen md:h-[600px] relative">
+            <img
+              class="z-[1] w-full h-screen md:h-[600px] object-cover"
+              src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-blog-f-img-2.jpg"
+              alt="Coffee Shop"
+            />
+            <div
+              class="flex justify-center text-center items-center z-10 top-0 left-0 w-full h-[600px] absolute gap-y-4 text-white flex-col bg-opacity-40"
+            >
+              <h1 class="text-[64px] font-bold">The Home of Coffee</h1>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
+                nominati vim et.
+              </p>
+              <button
+                class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[250px] h-[50px]"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dual img -->
+      <div class="container grid grid-cols-1 gap-8 px-4 mx-auto md:grid-cols-2">
+        <!-- Banner 1 - New Coffee Flavours -->
         <div
-          class="flex justify-center items-center z-10 top-0 left-0 size-full absolute gap-y-4 text-white flex-col"
+          class="relative overflow-hidden rounded-lg group cursor-pointer h-[300px]"
         >
-          <hh class="text-[64px] font-bold">The Home of Coffee</hh>
-          <p>
+          <img
+            src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-5-baner-img-1.jpg"
+            alt="New Coffee Flavours"
+            class="w-full h-[300px] object-cover"
+          />
+          <div
+            class="absolute inset-0 flex flex-col items-start justify-center p-8 text-white transition-colors duration-300 bg-transparent group-hover:bg-black/20"
+          >
+            <h2 class="mb-4 text-4xl font-bold">NEW COFFEE<br />FLAVOURS</h2>
+            <button
+              class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[300px] h-[50px]"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+
+        <!-- Banner 1 - New Coffee Flavours -->
+        <div
+          class="relative overflow-hidden rounded-lg group cursor-pointer h-[300px]"
+        >
+          <img
+            src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-5-baner-img-2.jpg"
+            alt="New Coffee Flavours"
+            class="object-cover h-[300px] w-full"
+          />
+          <div
+            class="absolute inset-0 flex flex-col items-start justify-center p-8 text-white transition-colors duration-300 bg-transparent group-hover:bg-black/20"
+          >
+            <h2 class="mb-4 text-4xl font-bold">NEW COFFEE<br />FLAVOURS</h2>
+            <button
+              class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[250px] h-[50px]"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product List -->
+      <div class="container px-6 mx-auto sm:px-2 md:px-0">
+        <!-- Product List Header -->
+        <div class="mb-8">
+          <h5 class="text-md font-thin text-[#cc9f83] text-center">
+            What Happens Here
+          </h5>
+          <h1 class="text-[45px] text-center font-bold">
+            Coffee house merchandise
+          </h1>
+          <div class="w-[200px] mx-auto h-[1px] bg-black"></div>
+        </div>
+
+        <!-- Products -->
+        <div
+          class="grid gap-5 products grid-cols sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <!-- Products card -->
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-1-500x500.jpg"
+                alt="PAPER POUCH"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">PAPER POUCH</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$46.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-2-500x500.jpg"
+                alt="PAPER BAG"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">PAPER BAG</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$79.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-3-500x500.jpg"
+                alt="PLASTIC POUCH"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">PLASTIC POUCH</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$27.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-4-500x500.jpg"
+                alt="COFFEE POT"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">COFFEE POT</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$71.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow cursor-pointer hover:shadow-lg hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-5-500x500.jpg"
+                alt="TEA POT"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">TEA POT</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$54.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow cursor-pointer hover:shadow-lg hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-6-500x500.jpg"
+                alt="PAPER CUP"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">PAPER CUP</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$31.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow cursor-pointer hover:shadow-lg hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-7-1-500x500.jpg"
+                alt="CHOCO BITES"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">CHOCO BITES</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$63.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow cursor-pointer hover:shadow-lg hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-8-1-500x500.jpg"
+                alt="GROUND COFFEE"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">GROUND COFFEE</h3>
+              <p class="mb-4">Delicious coffee product</p>
+              <p class="text-lg font-bold text-primary">$75.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="container h-[400px] rounded-lg mx-auto relative">
+        <img
+          class="w-full h-[400px] z-[1] rounded-lg object-cover"
+          src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/shop-home-grid-img.jpg"
+          alt=""
+        />
+        <div
+          class="absolute top-0 left-0 z-10 flex flex-col items-center justify-center text-center text-white gap-y-4 size-full"
+        >
+          <h1 class="text-[64px] font-bold">The Home of Coffee</h1>
+          <p class="text-xl">
             Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
             nominati vim et.
           </p>
@@ -69,49 +439,187 @@
         </div>
       </div>
 
-      <div class="carousel-item">
-        <img
-          src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-parallax-2.jpg"
-          class="d-block w-100"
-          alt="Coffee Shop"
-        />
-        <div class="carousel-caption">
-          <div class="text-center">
-            <img
-              src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/coffee-shop-logo.png"
-              alt="Coffee Shop Logo"
-              class="mb-4"
-            />
-            <h5>The Home of Coffee</h5>
-            <p>
-              Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-              nominati vim et.
-            </p>
-            <button class="btn">Read More</button>
+      <!-- Product List -->
+      <div class="container px-6 mx-auto sm:px-2 md:px-0">
+        <!-- Product List Header -->
+        <div class="mb-8">
+          <h5 class="text-md font-thin text-[#cc9f83] text-center">
+            What Happens Here
+          </h5>
+          <h1 class="text-[45px] text-center font-bold">
+            Coffee house merchandise
+          </h1>
+          <div class="w-[200px] mx-auto h-[1px] bg-black"></div>
+        </div>
+
+        <!-- Products -->
+        <div class="grid grid-cols-2 gap-5 products2 lg:grid-cols-4">
+          <!-- Product Card  -->
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-5-500x500.jpg"
+                alt="TEA POT"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">TEA POT</h3>
+              <p class="mb-4">Elegant tea pot for your tea time</p>
+              <p class="text-lg font-bold text-primary">
+                <span class="text-gray-400 line-through">$65.00</span>
+                $54.00
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-6-500x500.jpg"
+                alt="PAPER CUP"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">PAPER CUP</h3>
+              <p class="mb-4">Eco-friendly paper cup</p>
+              <p class="text-lg font-bold text-primary">$31.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-7-1-500x500.jpg"
+                alt="CHOCO BITES"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">CHOCO BITES</h3>
+              <p class="mb-4">Delicious chocolate bites</p>
+              <p class="text-lg font-bold text-primary">$63.00</p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg group overflow-hidden relative transition-all duration-500 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:-translate-y-[3px]"
+          >
+            <div class="relative overflow-hidden h-[350px]">
+              <img
+                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2016/03/product-image-8-1-500x500.jpg"
+                alt="GROUND COFFEE"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute w-full bottom-0 h-[45px] bg-[#cc9f83] transition-transform group-hover:translate-y-0 duration-300 translate-y-full flex items-center justify-center gap-2 text-white"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="font-bold">ADD TO CART</span>
+              </div>
+            </div>
+            <div class="p-4 group-hover:text-[#cc9f83]">
+              <h3 class="mb-2 text-xl font-semibold">GROUND COFFEE</h3>
+              <p class="mb-4">Finely ground coffee for perfect brewing</p>
+              <p class="text-lg font-bold text-primary">
+                <span class="text-gray-400 line-through">$85.00</span>
+                $75.00
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img
-          src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-blog-f-img-2.jpg"
-          class="d-block w-100"
-          alt="Coffee Shop"
-        />
-        <div class="carousel-caption">
-          <div class="text-center">
-            <img
-              src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/coffee-shop-logo.png"
-              alt="Coffee Shop Logo"
-              class="mb-4"
-            />
-            <h5>The Home of Coffee</h5>
-            <p>
-              Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-              nominati vim et.
-            </p>
-            <button class="btn">Read More</button>
+
+      <!-- Dual img -->
+      <div class="container grid grid-cols-1 gap-8 px-4 mx-auto md:grid-cols-2">
+        <!-- Banner 1 - New Coffee Flavours -->
+        <div
+          class="relative overflow-hidden rounded-lg group cursor-pointer h-[300px]"
+        >
+          <img
+            src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/h-5-baner-img-1.jpg"
+            alt="New Coffee Flavours"
+            class="w-full h-[300px] object-cover"
+          />
+          <div
+            class="absolute inset-0 flex flex-col items-start justify-center p-8 text-white transition-colors duration-300 bg-transparent group-hover:bg-black/20"
+          >
+            <h2 class="mb-4 text-4xl font-bold">NEW COFFEE<br />FLAVOURS</h2>
+            <button
+              class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[300px] h-[50px]"
+            >
+              Read More
+            </button>
           </div>
         </div>
+
+        <!-- Banner 1 - New Coffee Flavours -->
+        <div
+          class="relative overflow-hidden rounded-lg group cursor-pointer h-[300px]"
+        >
+          <img
+            src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-5-baner-img-4.jpg"
+            alt="New Coffee Flavours"
+            class="object-cover h-[300px] w-full"
+          />
+          <div
+            class="absolute inset-0 flex flex-col items-start justify-center p-8 text-white transition-colors duration-300 bg-transparent group-hover:bg-black/20"
+          >
+            <h2 class="mb-4 text-4xl font-bold">NEW COFFEE<br />FLAVOURS</h2>
+            <button
+              class="border hover:bg-white hover:text-black transiton-colors duration-500 font-semibold cursor-pointer mt-5 text-2xl border-white w-[250px] h-[50px]"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partner -->
+      <div
+        class="container grid grid-cols-2 px-20 mx-auto gap-y-10 md:grid-cols-4"
+      >
+        <img
+          src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/02/Client-3.png"
+          alt=""
+        />
+        <img
+          src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/02/Client-4.png"
+          alt=""
+        />
+        <img
+          src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/02/Client-5.png"
+          alt=""
+        />
+        <img
+          src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/02/Client-2.png"
+          alt=""
+        />
       </div>
     </div>
 
@@ -131,20 +639,27 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <!-- <script src="../../assets/js/carousel.js"></script> -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
 
     <!-- Carousel Config -->
     <script type="text/javascript">
       $(document).ready(function () {
         $(".carousel").slick({
-          dots: true,
+          arrows: false,
           infinite: true,
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
-          //   autoplay: true,
-          //   autoplaySpeed: 2000,
+          autoplay: true,
+          autoplaySpeed: 3000,
         });
       });
     </script>
+    <!-- uncomment if you want to use map rendering for product list -->
+    <!-- <script src="../../assets/js/index.js"></script> -->
   </body>
 </html>
